@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <p>Caracteres: <span id="counter">0</span></p>
+
+    <script>
+        const text1 = document.getElementById("text");
+        const counter1 = document.getElementById("counter");
+
+        text1.addEventListener("input", () => {
+            counter1.textContent = text.value.length;
+        });
+    </script>
+</body>
+</html>

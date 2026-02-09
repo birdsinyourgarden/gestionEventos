@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <button id="btn">Haz click</button>
+    <span id="counter">0</span>
+
+    <script>
+        let count = 0;
+        const button = document.getElementById("btn");
+        const span = document.getElementById("counter");
+
+        button.addEventListener("click", () => {
+            count++;
+            span.textContent = count;
+        });
+    </script>
+</body>
+</html>

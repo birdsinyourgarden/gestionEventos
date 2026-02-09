@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <div id="box" style="width: 100px; height: 100px; background: red;"></div>
+
+    <script>
+        const box1 = document.getElementById("box");
+
+        box.addEventListener("mouseover", () => {
+            box.style.background = "blue";
+        });
+
+        box.addEventListener("mouseout", () => {
+            box.style.background = "red";
+        });
+    </script>
+</body>
+</html>

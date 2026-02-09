@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <p id="text">Texto original</p>
+    <button id="btn">Haz click</button>
+
+    <script>
+        const button = document.getElementById("btn");
+        const text1 = document.getElementById("text");
+
+        button.addEventListener("click", () => {
+            text.textContent = "Texto modificado con JavaScript";
+        });
+    </script>
+</body>
+</html>
