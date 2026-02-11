@@ -61,3 +61,27 @@ Antes de enviar un formulario, muestra un cuadro de confirmación (confirm()).
 
 Crea un formulario con un checkbox “Acepto los términos”.
 El botón Enviar solo debe activarse cuando el checkbox esté marcado.
+
+14. Validación completa
+
+Crea un formulario con:
+
+Nombre: obligatorio
+
+Email: formato válido
+
+Edad: mayor o igual a 18
+
+Muestra mensajes de error debajo de cada campo.
+
+15. Validación en tiempo real
+
+Crea un formulario que valide los campos en tiempo real usando el evento input.
+
+Campos válidos → borde verde
+
+Campos inválidos → borde rojo
+
+16. Contador de envíos
+
+Cuenta cuántas veces se ha intentado enviar un formulario, incluso si la validación falla.

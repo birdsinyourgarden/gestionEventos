@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body> 
+    <form id="form">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p>Intentos: <span id="counter">0</span></p>
+
+    <script>
+        let count = 0;
+        const form1 = document.getElementById("form");
+        const counter1 = document.getElementById("counter");
+
+        form1.addEventListener("submit", (e) => {
+            e.preventDefault();
+            count++;
+            counter1.textContent = count;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body> 
+    <form id="form">
+        <input type="text" id="name" placeholder="Nombre">
+        <p id="eName"></p>
+        <input type="email" id="email" placeholder="Email">
+        <p id="eEmail"></p>
+        <input type="number" id="age" placeholder="Edad">
+        <p id="eAge"></p>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const form1 = document.getElementById("form");
+        
+        form1.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let ok = true;
+
+            if (name.value === "") {
+                eName.textContent = "Nombre obligatorio";
+                ok = false;
+            }
+
+            if (!email.value.includes('@')) {
+                eEmail.textContent = "Email no válido";
+                ok = false;
+            }
+
+            if (age.value < 18) {
+                eAge.textContent = "Debes ser mayor de edad";
+                ok = false;
+            }
+
+            if (ok) alert("Formulario correcto");
+        });
+    </script>
+</body>
+</html>

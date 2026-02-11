@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body> 
+    <input type="text" id="field">
+
+    <script>
+        const field1 = document.getElementById("field");
+        
+        field1.addEventListener("input", () => {
+            if (field1.value.length >= 5) {
+                field1.style.border = "2px solid green"
+            } else {
+                field1.style.border = "2px solid red"
+            }
+        });
+    </script>
+</body>
+</html>
