@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body> 
+    <input type="checkbox" id="check">Acepto los términos
+    <button id="btn" disabled>Enviar</button>
+
+    <script>
+        const check1 = document.getElementById("check");
+        const btn1 = document.getElementById("btn");
+        
+        check1.addEventListener("change", () => {
+            btn1.disabled = !check1.checked;
+        });
+    </script>
+</body>
+</html>

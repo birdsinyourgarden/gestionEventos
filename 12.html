@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body> 
+    <form id="form">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const form1 = document.getElementById("form");
+        
+        form1.addEventListener("submit", (e) => {
+            if (!confirm("deseas enviar el formulario?")) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

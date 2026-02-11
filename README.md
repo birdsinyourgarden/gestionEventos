@@ -40,3 +40,24 @@ Si el campo está vacío:
 Evita el envío.
 
 Muestra un mensaje de error.
+
+9. Validación de contraseña
+Crea un formulario con un campo contraseña.
+La contraseña debe tener al menos 8 caracteres.
+
+10. Validar dos campos
+Crea un formulario con los campos usuario y contraseña.
+Ambos deben estar completos para permitir el envío.
+
+11. Select dinámico
+Crea un <select> con tres opciones.
+Muestra en un párrafo la opción seleccionada cada vez que cambie.
+
+12. Confirmación de envío
+
+Antes de enviar un formulario, muestra un cuadro de confirmación (confirm()).
+
+13. Checkbox y botón
+
+Crea un formulario con un checkbox “Acepto los términos”.
+El botón Enviar solo debe activarse cuando el checkbox esté marcado.

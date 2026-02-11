@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>como 
+    <form>
+        <label for="colors">Elige un color:</label>
+        <select name="colors" id="colors">
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
+        </select>
+    </form>
+    <p id="result"></p>
+    <script>
+        const colors1 = document.getElementById("colors");
+        const result1 = document.getElementById("result");
+
+        colors1.addEventListener("change", () => {
+            result1.textContent = colors1.value;
+        });
+    </script>
+</body>
+</html>

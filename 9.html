@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <form id="form">
+        <input type="password" id="pass">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const form1 = document.getElementById("form");
+        const pass1 = document.getElementById("pass");
+
+        form1.addEventListener("submit", (e) => {
+            if (pass.value.length < 8) {
+                e.preventDefault();
+                alert("La contraseña debe tener al menos 8 caracteres")
+            }
+        });
+    </script>
+</body>
+</html>
